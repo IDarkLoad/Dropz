@@ -14,13 +14,6 @@
     font-size: 1.2rem;
 }
 
-@media (max-width: 450px) {
-
-    .repository_Box h3 {
-        font-size: 0.7rem;
-    }
-}
-
 .stats {
     display: flex;
     gap: 1rem;
