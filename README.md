@@ -1,27 +1,38 @@
-# React + TypeScript + Vite
+Este é um guia simples para configurar e executar o projeto em seu ambiente local. Siga os passos abaixo para começar a trabalhar com o projeto.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Pré-requisitos
+Antes de começar, certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 
-Currently, two official plugins are available:
+Node.js (v18 ou superior)
+npm (v6 ou superior)
+Git (opcional, mas recomendado)
+Configuração
+Siga estas etapas para configurar o projeto em seu ambiente:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Clonar o projeto
+Você pode clonar o repositório do projeto para sua máquina local usando o Git. Abra o terminal e execute o seguinte comando:
 
-## Expanding the ESLint configuration
+git clone (URL do projeto)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+2. Acessar o diretório do projeto
 
-- Configure the top-level `parserOptions` property like this:
+cd "projeto"
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+3. Instalar dependências
+Use o npm para instalar as dependências do projeto. Execute o seguinte comando no terminal:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+npm install
+Isso instalará todas as bibliotecas e pacotes necessários listados no arquivo package.json.
+
+Executando o Projeto
+Depois de concluir a configuração, você pode iniciar o projeto com facilidade:
+
+1. Iniciar o servidor
+No terminal, execute o seguinte comando para iniciar o servidor:
+
+npm start
+Isso iniciará o servidor do projeto e estará pronto para ser acessado em http://localhost:5073.
+
+Agora você configurou com sucesso e iniciou o projeto em seu ambiente local. Você pode começar a trabalhar no projeto e fazer as personalizações necessárias para atender às suas necessidades.
+
+Lembre-se de consultar a documentação do projeto ou o arquivo README.md no repositório para obter informações adicionais sobre como usar e contribuir para o projeto. Divirta-se codificando!
