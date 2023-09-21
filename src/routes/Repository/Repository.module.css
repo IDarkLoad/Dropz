@@ -25,9 +25,10 @@
     gap: 1.2rem;
     justify-content: center;
     align-items: center;
+    width: 100% auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 860px) {
     .repository_container {
         grid-template-columns: repeat(2, 1fr); 
         padding: 1rem; 
@@ -39,7 +40,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
     .repository_container {
         grid-template-columns: 1fr; 
     }

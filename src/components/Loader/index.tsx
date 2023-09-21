@@ -1,5 +1,5 @@
 import { FaSpinner } from 'react-icons/fa';
-import styles from './Styles/Loader.module.css'
+import styles from '../Loader/styles.module.css'
 
 const Loader = () => {
   return (

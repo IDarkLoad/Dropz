@@ -1,14 +1,14 @@
 import { useState, KeyboardEvent } from 'react';
 import { BsSearch } from 'react-icons/bs';
-import styles from './Styles/Search.module.css';
+import styles from './styles.module.css';
 
 type SearchProps = {
   loadUser: (userName: string) => Promise<void>;
 };
 
 const Search = ({ loadUser }: SearchProps) => {
-  const [userName, setUserName] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
+  const [userName, setUserName] = useState<string>("");
+  const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const handleKeyDown = (e: KeyboardEvent) => {
     if (e.key === "Enter") {
@@ -16,17 +16,17 @@ const Search = ({ loadUser }: SearchProps) => {
     }
   }
 
-  const searchUser = () => {
-    setIsLoading(true);
+  const searchUser = async () => {
+    try {
+      setIsLoading(true);
+      await loadUser(userName)
+      setIsLoading(false);
+    }
+    catch (error) {
+      setIsLoading(false);
+      console.error("Erro ao carregar o usuário:", error);
+    }
 
-    loadUser(userName)
-      .then(() => {
-        setIsLoading(false);
-      })
-      .catch((error) => {
-        setIsLoading(false);
-        console.error("Erro ao carregar o usuário:", error);
-      });
   }
 
   return (

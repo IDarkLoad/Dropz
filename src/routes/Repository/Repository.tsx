@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import BackBtn from "../components/BackBtn";
-import Loader from "../components/Loader";
-import RepositoryS from "../components/RepositoryS";
-import { RepositoryProps } from "../types/repository";
-import styles from "../components/Styles/Repository.module.css";
+import BackBtn from "../../components/BackBtn";
+import Loader from "../../components/Loader";
+import RepositoryS from "../../components/RepositoryBox";
+import { RepositoryProps } from "../../types/repository";
+import styles from "./Repository.module.css";
 
 const Repository = () => {
     const { username } = useParams();

@@ -1,7 +1,7 @@
-import { UserProps } from "../types/user";
+import { UserProps } from "../../types/user";
 import { MdLocationPin } from 'react-icons/md';
 import { Link } from 'react-router-dom';
-import styles from "./Styles/User.module.css";
+import styles from "../User/styles.module.css";
 
 
 const User = ({

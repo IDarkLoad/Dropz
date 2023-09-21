@@ -4,4 +4,5 @@ export type RepositoryProps = {
     language: string;
     stargazers_count: number;
     forks_count: number;
+    description: string;
 };
