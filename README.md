@@ -22,6 +22,7 @@ cd "projeto"
 Use o npm para instalar as dependências do projeto. Execute o seguinte comando no terminal:
 
 npm install
+
 Isso instalará todas as bibliotecas e pacotes necessários listados no arquivo package.json.
 
 Executando o Projeto
@@ -31,6 +32,7 @@ Depois de concluir a configuração, você pode iniciar o projeto com facilidade
 No terminal, execute o seguinte comando para iniciar o servidor:
 
 npm start
+
 Isso iniciará o servidor do projeto e estará pronto para ser acessado em http://localhost:5073.
 
 Agora você configurou com sucesso e iniciou o projeto em seu ambiente local. Você pode começar a trabalhar no projeto e fazer as personalizações necessárias para atender às suas necessidades.
